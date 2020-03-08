@@ -1,0 +1,22 @@
+
+run Dockerfile
+docker image build -t helloworld .
+
+
+List all containers 
+docker ps –aq 
+
+Stop all running containers 
+docker stop $(docker ps -aq) 
+
+Remove all containers 
+docker rm $(docker ps -aq) 
+
+Remove all images 
+docker rmi $(docker images -q) 
+
+load docker by running the below command 
+docker load -i abc.tar 
+
+run the command to start the 
+docker-compose up
